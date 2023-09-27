@@ -107,7 +107,6 @@ meter {
   min-height: 100dvh;
 }
 .main .imageContainer {
-  padding: 1rem;
   position: relative;
 }
 .main .card {
@@ -151,15 +150,15 @@ meter {
 .main .imageContainer {
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .main .imageContainer .bg {
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: 0px;
+  right: -20px;
   height: 100%;
   z-index: -1;
-  width: 90%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
