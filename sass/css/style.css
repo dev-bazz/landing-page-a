@@ -154,7 +154,6 @@ meter {
 }
 .main .imageContainer .bg {
   position: absolute;
-  top: 0px;
   right: -20px;
   height: 100%;
   z-index: -1;
