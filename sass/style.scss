@@ -1,6 +1,63 @@
 @use "./reset";
+@use "./function" as *;
 
 .main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	.imageContainer {
+		background-color: blue;
+		padding: px-to-rem(16px);
+	}
+
+	.card {
+		max-width: px-to-rem(400px);
+	}
+
+	.workspace {
+		display: grid;
+		place-items: center;
+	}
+
+	.spaces {
+		margin-top: px-to-rem(16px);
+		border: 1px solid black;
+		padding: px-to-rem(16px);
+		border-radius: 6px;
+
+		display: flex;
+		flex-direction: column;
+		gap: px-to-rem(16px);
+		width: 100%;
+	}
+
+	.space {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: px-to-rem(80px);
+		.name {
+			display: flex;
+			align-items: center;
+			gap: px-to-rem(8px);
+		}
+		button {
+			padding: px-to-rem(8px);
+			border-radius: 6px;
+			border: 1px solid black;
+			cursor: pointer;
+			background-color: rgb(232, 235, 232);
+		}
+	}
+
+	.imageWr {
+		max-width: 450px;
+	}
+
+	.imageContainer {
+		display: grid;
+		place-items: center;
+	}
 }

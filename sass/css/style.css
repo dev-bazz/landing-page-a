@@ -103,6 +103,54 @@ meter {
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.main .imageContainer {
+  background-color: blue;
+  padding: 1rem;
+}
+.main .card {
+  max-width: 25rem;
+}
+.main .workspace {
+  display: grid;
+  place-items: center;
+}
+.main .spaces {
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.main .space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.main .space .name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main .space button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: rgb(232, 235, 232);
+}
+.main .imageWr {
+  max-width: 450px;
+}
+.main .imageContainer {
+  display: grid;
+  place-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
